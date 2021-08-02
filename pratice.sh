@@ -7,7 +7,7 @@ terraform apply --auto-approve
 echo "**********************************************************************"
 echo "move the state file from local to GS bucket & new VM instance created"
 echo "**********************************************************************"
-gsutil cp /task/* gs://new12344
+gsutil cp /task2/* gs://new12344
 echo "****************************************************************************"
 echo "entire task folder having files are forwarded from local to GS bucket"
 echo "****************************************************************************"
