@@ -19,3 +19,11 @@ git add .
 git commit -m "initial commit"
 git remote add origin "https://github.com/pasamvenkatesh/$repo_name.git"
 git push -u origin master
+echo "****************************************************************************"
+echo "push the code local to Github"
+echo "****************************************************************************"
+cd /task3
+git clone https://github.com/pasamvenkatesh/practice.git
+echo "****************************************************************************"
+echo "clone the repo"
+echo "****************************************************************************"
