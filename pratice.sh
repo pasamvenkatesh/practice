@@ -27,3 +27,7 @@ git clone https://github.com/pasamvenkatesh/practice.git
 echo "****************************************************************************"
 echo "clone the repo"
 echo "****************************************************************************"
+cd /task3/practice/
+terraform validate
+terraform plan
+terraform apply --auto-approve
