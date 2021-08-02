@@ -1,12 +1,5 @@
 #!/bin/bash
 cd /task2
-terraform fmt
-terraform validate
-terraform plan
-terraform apply --auto-approve
-echo "**********************************************************************"
-echo "move the state file from local to GS bucket & new VM instance created"
-echo "**********************************************************************"
 gsutil cp /task2/* gs://new12344
 echo "****************************************************************************"
 echo "entire task folder having files are forwarded from local to GS bucket"
@@ -32,6 +25,9 @@ terraform init
 terraform validate
 terraform plan
 terraform apply --auto-approve
+echo "**********************************************************************"
+echo "move the state file from local to GS bucket & new VM instance created"
+echo "**********************************************************************"
 echo "****************************************************************************"
 echo "done"
 echo "****************************************************************************"
